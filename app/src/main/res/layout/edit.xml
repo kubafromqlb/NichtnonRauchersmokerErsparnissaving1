@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvtitle"
+        android:layout_width="360dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/ueberschrift"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvdate"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/tvdate"
+        android:textAlignment="viewStart"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvtitle" />
+
+    <TextView
+        android:id="@+id/tvdateoutput"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/tvdate"
+        app:layout_constraintTop_toBottomOf="@+id/tvtitle" />
+
+    <EditText
+        android:id="@+id/etdate"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="@string/date"
+        android:inputType="date"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/tvdateoutput"
+        app:layout_constraintTop_toBottomOf="@+id/tvtitle" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="40dp"
+        android:onClick="onClick"
+        android:text="@string/button"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/tvpartperday"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/partperday"
+        android:textAlignment="viewStart"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvdate" />
+
+    <TextView
+        android:id="@+id/tvpartperdayoutput"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/tvpartperday"
+        app:layout_constraintTop_toBottomOf="@+id/tvdateoutput" />
+
+    <EditText
+        android:id="@+id/etpartperday"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="@string/stueck"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/tvpartperdayoutput"
+        app:layout_constraintTop_toBottomOf="@+id/etdate" />
+
+    <TextView
+        android:id="@+id/tvresult"
+        android:layout_width="103dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.637"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/etpartperbox" />
+
+    <EditText
+        android:id="@+id/etpriceperbox"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="@string/price"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/tvpriceperboxoutput"
+        app:layout_constraintTop_toBottomOf="@+id/etpartperday" />
+
+    <TextView
+        android:id="@+id/tvpriceperboxoutput"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/tvpriceperbox"
+        app:layout_constraintTop_toBottomOf="@+id/tvpartperdayoutput" />
+
+    <TextView
+        android:id="@+id/tvpriceperbox"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/tvpriceperbox"
+        android:textAlignment="viewStart"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvpartperday" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/partbox"
+        android:textAlignment="viewStart"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvpriceperbox" />
+
+    <TextView
+        android:id="@+id/tvpartperboxoutput"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/tvpriceperboxoutput" />
+
+    <EditText
+        android:id="@+id/etpartperbox"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="@string/stueck"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/tvpartperboxoutput"
+        app:layout_constraintTop_toBottomOf="@+id/etpriceperbox" />
+</android.support.constraint.ConstraintLayout>
